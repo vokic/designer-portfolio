@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+  
+scroll-behavior: smooth; 
+overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background: url(img/Background\ and\ Planet.png) no-repeat center center fixed;
+  background-size: cover;
+  /* overflow: hidden; */
+}
+
+.menu-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 20px; */
+  background: #232323;
+  color: #cdcdcd;
+  /* padding: 20px; */
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.menu-logo {
+  line-height: 0;
+  margin-left: 100px;
+}
+
+.menu-logo img {
+  max-height: 40px;
+  max-width: 100px;
+  flex-shrink: 0;
+  /*   padding-left: 100px;
+ */
+}
+
+.menu-container a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+.menu-container li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-container a:hover {
+  color: #73b430;
+}
+
+.menu-container input {
+  display: block;
+  width: 35px;
+  height: 25px;
+  margin: 0;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+.menu li img {
+  width: 40px;
+}
+
+/* Burger menu */
+.menu-container span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #73b430;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+.menu-container span:first-child {
+  transform-origin: 0% 0%;
+}
+
+.menu-container span:nth-child(3) {
+  transform-origin: 0% 100%;
+}
+
+.menu-container input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(3px, -1px);
+  background: #232323;
+}
+
+.menu-container input:checked ~ span:nth-child(4) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menu-container input:checked ~ span:nth-child(3) {
+  transform: rotate(-45deg) translate(-5px, 11px);
+}
+
+.menu {
+  margin-right: 100px;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/* MAIN */
+
+.main {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.main-left {
+  margin-left: 100px;
+  margin-top: -70px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;  */
+  justify-content: center;
+}
+
+.main-left h1 {
+  font-size: 100px;
+  color: white;
+}
+
+.main-left p {
+  font-size: 24px;
+  color: white;
+}
+
+.main-left img {
+  width: 190px;
+}
+
+.main-right {
+  padding: 20px;
+}
+
+/* WORK */
+
+.work {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  padding-right: 50px;
+}
+
+.work-left {
+  margin-left: 100px;
+  margin-top: -70px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;  */
+  justify-content: center;
+}
+
+.work-left h1 {
+  font-size: 100px;
+  color: white;
+}
+
+.work-left p {
+  font-size: 24px;
+  color: white;
+}
+
+.work-left img {
+  width: 190px;
+}
+
+.work-right {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-right img {
+  width: 90%;
+  padding-left: 100px;
+}
+
+/* ABOUT */
+
+.about {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  padding-right: 50px;
+}
+
+.about-left {
+  margin-left: 100px;
+  margin-top: -70px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;  */
+  justify-content: center;
+}
+
+.about-left h1 {
+  font-size: 100px;
+  color: white;
+}
+
+.about-left p {
+  font-size: 24px;
+  color: white;
+}
+
+.about-left img {
+  width: 190px;
+}
+
+.about-right {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-right img {
+  width: 90%;
+  padding-left: 100px;
+}
+
+/* CONTACT */
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  padding-right: 50px;
+}
+
+.contact-left {
+  margin-left: 100px;
+  margin-top: -70px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;  */
+  justify-content: center;
+}
+
+.contact-left h1 {
+  font-size: 100px;
+  color: white;
+}
+
+.contact-left p {
+  font-size: 24px;
+  color: white;
+}
+
+.contact-left img {
+  width: 190px;
+}
+
+.contact-right {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-right img {
+  width: 90%;
+  padding-left: 100px;
+}
+/* mobile styles */
+@media only screen and (max-width: 767px) {
+  .menu-container {
+    flex-direction: column;
+    align-items: flex-end;
+    height: 50px;
+    padding-top: 15px;
+    padding-right: 40px;
+  }
+
+  .menu-logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .menu-logo img {
+    max-height: 30px;
+  }
+
+  .menu {
+    position: absolute;
+    box-sizing: border-box;
+    width: 300px;
+    right: -300px;
+    height: 100vh;
+    top: 0;
+    margin: -20px;
+    padding: 75px 50px 50px;
+    background: #71B42C ;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translateX(0%);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  .menu-container input:checked ~ .menu {
+    transform: translateX(-100%);
+  }
+}
+
+/* desktop styles */
+@media only screen and (min-width: 768px) {
+  .menu-container {
+    width: 100%;
+  }
+
+  .menu-container a {
+    color: #cdcdcd;
+  }
+
+  .menu-container input {
+    display: none;
+  }
+
+  /* Burger menu */
+  .menu-container span {
+    display: none;
+  }
+
+  .menu {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu ul {
+    display: flex;
+    padding: 0;
+  }
+
+  .menu li {
+    padding: 0 20px;
+  }
+}
