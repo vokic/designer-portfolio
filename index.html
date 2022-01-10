@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -32,12 +34,12 @@
                 <ul>
                     <li>
                         <a href="http://linkedin.com">
-                            <img src="/img/LinkedIn.png" alt="">
+                            <box-icon type='logo' color="white" name='linkedin' size="md"></box-icon>
                         </a>
                     </li>
                     <li>
                         <a href="http://instagram.com">
-                            <img src="/img/Instagram.png" alt="">
+                            <box-icon type='logo' color="white" name='instagram' size="md"></box-icon>
                         </a>
                     </li>
                     <li>
@@ -71,10 +73,13 @@
             <div class="main-left">
                 <h1>Marko Andjelic</h1>
                 <img src="img/Lines.png" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                <p>ux / ui, web & graphic designer</p>
+                <button>Show more</button>
             </div>
-            <div class="main-right" >
-                <img data-aos="fade-left" src="/img/Commets-and-Portfolio.png" alt="">
+            <div data-aos="fade-right"
+            data-aos-delay="900"
+            data-aos-easing="ease-in-sine" class="main-right" >
+                <img  src="/img/Commets-and-Portfolio.png" alt="">
             </div>
 
         </div>
@@ -83,7 +88,8 @@
             <div class="work-left">
                 <h1>My Works</h1>
                 <img src="img/Lines.png" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                <p>Illustrations, graphics & web</p>
+                <button>Show more</button>
             </div>
             <div class="work-right ">
                 <img data-aos="fade-left"  src="img/work.png" alt="">
@@ -94,7 +100,8 @@
             <div class="about-left">
                 <h1>About Me</h1>
                 <img src="img/Lines.png" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                <p>I love dick, design, video games and tattoos.</p>
+                <button>Show more</button>
             </div>
             <div class="about-right" >
                 <img data-aos="fade-left" src="/img/about.png" alt="">
@@ -105,7 +112,11 @@
             <div class="contact-left">
                 <h1>Get In Touch</h1>
                 <img src="img/Lines.png" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                
+                <p class="email"><box-icon name='envelope' color="white" size="md"></box-icon> mare@free-nole.au</p>
+
+              <p class="phone"><box-icon name='phone' color="white" size="md"></box-icon> +381 60 666 6666</p>
+
             </div>
             <div class="contact-right ">
                 <img data-aos="fade-left" src="/img/contact.png" alt="">
@@ -115,6 +126,8 @@
     
 
 </body>
+
+<script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
