@@ -175,6 +175,7 @@ overflow-x: hidden;
 }
 
 .work-left {
+  width: 30vw;
   margin-left: 100px;
   margin-top: -70px;
   display: flex;
@@ -212,7 +213,7 @@ overflow-x: hidden;
   margin-top: 77px;
 }
 
-/* ABOUT */
+/* contact */
 
 .about {
   display: flex;
@@ -222,6 +223,7 @@ overflow-x: hidden;
 }
 
 .about-left {
+  width: 30vw;
   margin-left: 100px;
   margin-top: -70px;
   display: flex;
@@ -268,6 +270,7 @@ overflow-x: hidden;
 }
 
 .contact-left {
+  width: 30vw;
   margin-left: 100px;
   margin-top: -70px;
   display: flex;
@@ -304,6 +307,52 @@ overflow-x: hidden;
   margin-top: 77px;
 }
 
+
+/* 
+.contact {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  padding-right: 50px;
+}
+
+.contact-left {
+  margin-left: 100px;
+  margin-top: -70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+.contact-left h1 {
+  font-size: 100px;
+  color: white;
+}
+
+.contact-left p {
+  font-size: 24px;
+  color: white;
+}
+
+.contact-left img {
+  width: 190px;
+}
+
+.contact-right {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-right img {
+  width: 90%;
+  padding-left: 100px;
+  margin-top: 77px;
+}
+ */
 
 button {
     background-color: #71B42C;
