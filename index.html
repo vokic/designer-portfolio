@@ -14,7 +14,8 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
 
-  <body>
+  <body id="particle_background">
+     <div id="particles-js"></div>
     <header>
       <nav class="menu-container">
         <!-- burger menu -->
@@ -70,24 +71,32 @@
       </nav>
     </header>
 
-    <main>
+    
+    
+    <main> 
       <div class="main">
         <div class="main-left">
-          <h1>Marko Djokovic</h1>
+          <h1>Marko Adjelic</h1>
           <img src="img/lines.png" alt="" />
           <p>ux / ui, web & graphic designer</p>
           <button>Show more</button>
         </div>
-        <div
+        <!-- <div
           data-aos="fade-right"
           data-aos-delay="900"
           data-aos-easing="ease-in-sine"
           class="main-right"
+        > -->
+
+        <div
+          class="main-right"
         >
-          <img data-tilt src="img/commets.png" alt="" />
+          <img data-tilt src="img/port.png" alt="" />
         </div>
       </div>
     </main>
+  
+
     <div class="work" id="work">
       <div class="work-left">
         <h1>My Works</h1>
@@ -99,6 +108,7 @@
         <img data-aos="fade-left" src="img/work.png" alt="" />
       </div>
     </div>
+
     <div class="about" id="about">
       <div class="about-left">
         <h1>About Me</h1>
@@ -110,6 +120,7 @@
         <img data-aos="fade-left" src="img/about.png" alt="" />
       </div>
     </div>
+
     <div class="contact" id="contact">
       <div class="contact-left">
         <h1>Get In Touch</h1>
@@ -149,7 +160,15 @@
     <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="tilt.js"></script>
+    <!-- <script src="tilt.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  
+  <script>
+particlesJS.load('particles-js', 'particles.json', function(){
+  console.log('particles.json loaded...')
+})
+  </script>
+
   </body>
 
   <script>
